@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: emptydir-pod
+spec:
+  containers:
+  - name: emptydir-container
+    image: nginx
+    volumeMounts:
+    - mountPath: /usr/share/nginx/html
+      name: emptydir-volume
+  - name: almalinux:9
+    image: almalinux:9
+    command: [ "sleep", "3600"]
+    volumeMounts:
+    - mountPath: /mnt/nginx-logs
+      name: emptydir-volume
+      readOnly: true
+  volumes:
+  - name: emptydir-volume
+    emptyDir: 
+      sizeLimit: "500Mi"
