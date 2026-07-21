@@ -9,8 +9,8 @@ spec:
     volumeMounts:
     - mountPath: /usr/share/nginx/html
       name: emptydir-volume
-  - name: almalinux:9
-    image: almalinux
+  - name: almalinux
+    image: almalinux:9
     command: [ "sleep", "3600"]
     volumeMounts:
     - mountPath: /mnt/nginx-logs
