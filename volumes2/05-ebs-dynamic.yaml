@@ -3,8 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: ebs-dynamic
 spec:
-  storageClassName: roboshop-ebs # Empty string must be explicitly set otherwise default StorageClass will be set
-  volumeName: ebs-dynamic    #volume name from PV, 15GB volume is claiming from above 20GB of PV
+  storageClassName: roboshop-ebs # Empty string must be explicitly set otherwise default StorageClass will be set   #volume name from PV, 15GB volume is claiming from above 20GB of PV
   accessModes:
     - ReadWriteOnce
   resources:
