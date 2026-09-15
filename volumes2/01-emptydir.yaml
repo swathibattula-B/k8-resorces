@@ -1,20 +1,20 @@
 apiVersion: v1
 kind: pod
 metadata:
-  name:emptydir-container
+  name: emptydir-pod
 spec:
   containers:
-   -name: nginx
+   -name: emptydir-container
     image: nginx
     volumeMounts:
      - mountPath: /var/log/nginx
-      name:nginx-log 
+      name: nginx-log 
    -name: almalinux
     image: almalinux:9
     volumeMounts:
      - mountPath: /mnt/nginx
-      name:nginx-log
+      name: nginx-log
   volumes:
-   -name:nginx-log
+   -name: nginx-log
     emptyDir:
-      sizeLimit:500Mi
+      sizeLimit: 500Mi
