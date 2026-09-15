@@ -11,6 +11,7 @@ spec:
         name: nginx-log 
    - name: almalinux
      image: almalinux:9
+     command=["sleep","2500"]
      volumeMounts:
       - mountPath: /mnt/nginx
         name: nginx-log
