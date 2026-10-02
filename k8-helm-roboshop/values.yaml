@@ -1,0 +1,4 @@
+deployment:
+  replicas: "1"
+  imageName: "battulaswathi/mongodb"
+  imageVersion: "1.0.0"
