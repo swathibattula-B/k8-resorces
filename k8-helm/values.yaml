@@ -1,6 +1,6 @@
 deployment:
  replicas: "1"
- changeCause : "installing 1.31-trixie version"
- imageVersion : "1.31-trixie"
+ changeCause : "installing 1.27 version"
+ imageVersion : "1.27"
 service:
  type: LoadBalancer
