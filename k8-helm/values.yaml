@@ -1,5 +1,5 @@
 deployemt:
- replicas: 2
+ replicas: "1"
  changeCause : "installing latest version"
  imageVersion : "latest"
 service:
