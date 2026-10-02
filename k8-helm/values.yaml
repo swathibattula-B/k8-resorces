@@ -1,6 +1,6 @@
 deployment:
  replicas: "1"
- changeCause : "installing latest version"
- imageVersion : "latest"
+ changeCause : "installing 1.31.6 version"
+ imageVersion : "1.31.6"
 service:
  type: NodePort
