@@ -1,0 +1,6 @@
+deployemt:
+ replicas: 2
+ changeCause : "installing latest version"
+ imageVersion : "latest"
+service:
+ type: lb
