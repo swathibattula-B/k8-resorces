@@ -3,4 +3,4 @@ deployment:
  changeCause : "installing 1.27 version"
  imageVersion : "1.27"
 service:
- type: LoadBalancer
+ type: NodePort
