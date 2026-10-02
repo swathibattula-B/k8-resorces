@@ -1,6 +1,6 @@
 deployment:
  replicas: "1"
- changeCause : "installing 1.30.5-otel version"
- imageVersion : "1.30.5-otel"
+ changeCause : "installing 1.31.6-trixie version"
+ imageVersion : "1.31.6-trixie"
 service:
- type: NodePort
+ type: LoadBalancer
