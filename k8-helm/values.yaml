@@ -3,4 +3,4 @@ deployment:
  changeCause : "installing latest version"
  imageVersion : "latest"
 service:
- type: lb
+ type: NodePort
